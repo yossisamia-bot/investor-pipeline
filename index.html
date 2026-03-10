@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investor Pipeline Dashboard</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; color: #1a1a2e; }
+
+  header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 24px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
+  header span { font-size: 13px; opacity: 0.6; }
+
+  .summary {
+    display: flex;
+    gap: 16px;
+    padding: 20px 32px;
+    flex-wrap: wrap;
+  }
+  .stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px 24px;
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .stat-card .num { font-size: 32px; font-weight: 800; }
+  .stat-card .label { font-size: 12px; color: #888; margin-top: 4px; }
+  .stat-card.total .num { color: #1a1a2e; }
+  .stat-card.done .num { color: #22c55e; }
+  .stat-card.progress .num { color: #f59e0b; }
+  .stat-card.pending .num { color: #94a3b8; }
+
+  .filters {
+    padding: 0 32px 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .filter-btn {
+    padding: 7px 18px;
+    border-radius: 20px;
+    border: 1.5px solid #ddd;
+    background: white;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+  }
+  .filter-btn.active, .filter-btn:hover {
+    background: #1a1a2e;
+    color: white;
+    border-color: #1a1a2e;
+  }
+
+  .table-wrap { padding: 0 32px 40px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  thead tr { background: #1a1a2e; color: white; }
+  th { padding: 14px 16px; font-size: 12px; font-weight: 600; text-align: right; letter-spacing: 0.5px; white-space: nowrap; }
+  td { padding: 14px 16px; font-size: 13px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbff; }
+
+  .investor-name { font-weight: 700; font-size: 14px; }
+  .llc-name { color: #6366f1; font-size: 12px; margin-top: 2px; }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge.done    { background: #dcfce7; color: #15803d; }
+  .badge.pending { background: #fef9c3; color: #a16207; }
+  .badge.waiting { background: #f1f5f9; color: #64748b; }
+  .badge.forming { background: #ede9fe; color: #7c3aed; }
+
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+
+  .prop-cell { font-size: 12px; color: #555; line-height: 1.5; }
+  .prop-cell.empty { color: #ccc; }
+
+  .address-line { font-size: 10px; color: #aaa; margin-top: 3px; }
+
+  .updated { font-size: 11px; color: #aaa; text-align: center; padding: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏠 Investor Pipeline</h1>
+  <span id="date-display"></span>
+</header>
+
+<div class="summary">
+  <div class="stat-card total"><div class="num" id="s-total">0</div><div class="label">סה"כ לקוחות</div></div>
+  <div class="stat-card done"><div class="num" id="s-ein">0</div><div class="label">EIN התקבל</div></div>
+  <div class="stat-card progress"><div class="num" id="s-ss4">0</div><div class="label">ממתין ל-EIN</div></div>
+  <div class="stat-card pending"><div class="num" id="s-forming">0</div><div class="label">בהקמה</div></div>
+</div>
+
+<div class="filters">
+  <button class="filter-btn active" onclick="filter('all', this)">הכל</button>
+  <button class="filter-btn" onclick="filter('ein', this)">✅ EIN התקבל</button>
+  <button class="filter-btn" onclick="filter('ss4', this)">⏳ ממתין ל-EIN</button>
+  <button class="filter-btn" onclick="filter('forming', this)">🔄 בהקמה</button>
+  <button class="filter-btn" onclick="filter('bank', this)">🏦 עם חשבון בנק</button>
+</div>
+
+<div class="table-wrap">
+<table id="main-table">
+  <thead>
+    <tr>
+      <th>משקיע</th>
+      <th>LLC</th>
+      <th>הקמה</th>
+      <th>SS4</th>
+      <th>EIN</th>
+      <th>חשבון בנק</th>
+      <th>העברת כסף</th>
+      <th>נכס 1</th>
+      <th>נכס 2</th>
+      <th>נכס 3</th>
+      <th>הערות</th>
+    </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+<div class="updated">עודכן לאחרונה: <span id="updated-date"></span></div>
+
+<script>
+const investors = [
+  {
+    name: "עידן והיידי לב ארי",
+    llc: "LVA Holdings LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "EIN בהגשה"
+  },
+  {
+    name: "הרצל פרידמן",
+    llc: "Friedman Ventures LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  },
+  {
+    name: "אופיר מילר",
+    llc: "Miller Holdings LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  },
+  {
+    name: "ערן וקלרה עמי",
+    llc: "AmiCore LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "שם מקורי EKA נתפס"
+  },
+  {
+    name: "ויטלי וסבטלנה יורין",
+    llc: "SV Capital Holdings LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  },
+  {
+    name: "טליה ואלון עדן",
+    llc: "TAE Holdings LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  },
+  {
+    name: "אריאל ודלית נישליס",
+    llc: "Nishlis Holdings LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "EIN התקבל מיידית (SSN)"
+  },
+  {
+    name: "חן פוגלמן ומתן רחמני",
+    llc: "G&N Adventure LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  },
+  {
+    name: "אלעד, הדר ומעין טובי",
+    llc: "AVRUMI LLC",
+    stage: "forming",
+    formation: "pending",
+    ss4: "waiting",
+    ein: "waiting",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "⚠️ שני אנשים בשם הדר טובי"
+  },
+  {
+    name: "מנשה ברודצקי",
+    llc: "MBK Group LLC",
+    stage: "forming",
+    formation: "pending",
+    ss4: "waiting",
+    ein: "waiting",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: ""
+  }
+];
+
+const REGISTERED_ADDRESS = '5901 Balcones Drive, STE 100, Austin TX 78731, USA';
+
+const labels = {
+  done:    { text: "✅ הושלם",  cls: "done" },
+  pending: { text: "⏳ בהמתנה", cls: "pending" },
+  waiting: { text: "—",         cls: "waiting" },
+  forming: { text: "🔄 בתהליך", cls: "forming" }
+};
+
+function badge(key) {
+  if (!key) return `<span class="badge waiting">—</span>`;
+  const l = labels[key];
+  return `<span class="badge ${l.cls}">${l.text}</span>`;
+}
+
+function propCell(p) {
+  if (!p) return `<span class="prop-cell empty">—</span>`;
+  return `<div class="prop-cell">
+    📍 ${p.address || '—'}<br>
+    ${p.tenant ? '👤 שוכר: ' + p.tenant : '🔓 אין שוכר'}
+  </div>`;
+}
+
+let currentFilter = 'all';
+
+function render(f) {
+  const tbody = document.getElementById('tbody');
+  const filtered = f === 'all' ? investors :
+    f === 'ein'     ? investors.filter(i => i.ein === 'done') :
+    f === 'ss4'     ? investors.filter(i => i.ein === 'pending') :
+    f === 'forming' ? investors.filter(i => i.stage === 'forming') :
+    f === 'bank'    ? investors.filter(i => i.bank === 'done') : investors;
+
+  tbody.innerHTML = filtered.map(inv => `
+    <tr data-stage="${inv.stage}">
+      <td><div class="investor-name">${inv.name}</div></td>
+      <td><div class="llc-name">${inv.llc}</div><div class="address-line">📍 ${REGISTERED_ADDRESS}</div></td>
+      <td>${badge(inv.formation)}</td>
+      <td>${badge(inv.ss4)}</td>
+      <td>${badge(inv.ein)}</td>
+      <td>${badge(inv.bank)}</td>
+      <td>${badge(inv.funding)}</td>
+      <td>${propCell(inv.props[0])}</td>
+      <td>${propCell(inv.props[1])}</td>
+      <td>${propCell(inv.props[2])}</td>
+      <td style="font-size:12px;color:#888;">${inv.notes}</td>
+    </tr>
+  `).join('');
+
+  // stats
+  document.getElementById('s-total').textContent = investors.length;
+  document.getElementById('s-ein').textContent = investors.filter(i => i.ein === 'done').length;
+  document.getElementById('s-ss4').textContent = investors.filter(i => i.ein === 'pending').length;
+  document.getElementById('s-forming').textContent = investors.filter(i => i.stage === 'forming').length;
+}
+
+function filter(f, btn) {
+  currentFilter = f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render(f);
+}
+
+// dates
+const now = new Date();
+const opts = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+document.getElementById('date-display').textContent = now.toLocaleDateString('he-IL', opts);
+document.getElementById('updated-date').textContent = now.toLocaleDateString('he-IL', opts);
+
+render('all');
+</script>
+</body>
+</html>
