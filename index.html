@@ -11,49 +11,49 @@
   header {
     background: linear-gradient(135deg, #1a1a2e, #16213e);
     color: white;
-    padding: 24px 32px;
+    padding: 14px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  header h1 { font-size: 22px; font-weight: 700; letter-spacing: 0.5px; }
-  header span { font-size: 13px; opacity: 0.6; }
+  header h1 { font-size: 18px; font-weight: 700; letter-spacing: 0.5px; }
+  header span { font-size: 12px; opacity: 0.6; }
 
   .summary {
     display: flex;
-    gap: 16px;
-    padding: 20px 32px;
+    gap: 10px;
+    padding: 12px 20px;
     flex-wrap: wrap;
   }
   .stat-card {
     background: white;
-    border-radius: 12px;
-    padding: 16px 24px;
+    border-radius: 8px;
+    padding: 8px 16px;
     flex: 1;
-    min-width: 140px;
+    min-width: 100px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   }
-  .stat-card .num { font-size: 32px; font-weight: 800; }
-  .stat-card .label { font-size: 12px; color: #888; margin-top: 4px; }
+  .stat-card .num { font-size: 22px; font-weight: 800; }
+  .stat-card .label { font-size: 10px; color: #888; margin-top: 2px; }
   .stat-card.total .num { color: #1a1a2e; }
   .stat-card.done .num { color: #22c55e; }
   .stat-card.progress .num { color: #f59e0b; }
   .stat-card.pending .num { color: #94a3b8; }
 
   .filters {
-    padding: 0 32px 16px;
+    padding: 0 20px 10px;
     display: flex;
-    gap: 10px;
+    gap: 6px;
     flex-wrap: wrap;
   }
   .filter-btn {
-    padding: 7px 18px;
-    border-radius: 20px;
-    border: 1.5px solid #ddd;
+    padding: 4px 12px;
+    border-radius: 14px;
+    border: 1px solid #ddd;
     background: white;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 11px;
     transition: all 0.2s;
   }
   .filter-btn.active, .filter-btn:hover {
@@ -62,24 +62,24 @@
     border-color: #1a1a2e;
   }
 
-  .table-wrap { padding: 0 32px 40px; overflow-x: auto; }
-  table { width: 100%; border-collapse: collapse; background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); }
+  .table-wrap { padding: 0 20px 20px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.07); }
   thead tr { background: #1a1a2e; color: white; }
-  th { padding: 14px 16px; font-size: 12px; font-weight: 600; text-align: right; letter-spacing: 0.5px; white-space: nowrap; }
-  td { padding: 14px 16px; font-size: 13px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
+  th { padding: 7px 8px; font-size: 10px; font-weight: 600; text-align: right; letter-spacing: 0.3px; white-space: nowrap; }
+  td { padding: 6px 8px; font-size: 11px; border-bottom: 1px solid #f0f2f5; vertical-align: middle; }
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: #fafbff; }
 
-  .investor-name { font-weight: 700; font-size: 14px; }
-  .llc-name { color: #6366f1; font-size: 12px; margin-top: 2px; }
+  .investor-name { font-weight: 700; font-size: 11.5px; }
+  .llc-name { color: #6366f1; font-size: 10px; margin-top: 1px; }
 
   .badge {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 11px;
+    gap: 3px;
+    padding: 2px 7px;
+    border-radius: 10px;
+    font-size: 10px;
     font-weight: 600;
     white-space: nowrap;
   }
@@ -88,14 +88,14 @@
   .badge.waiting { background: #f1f5f9; color: #64748b; }
   .badge.forming { background: #ede9fe; color: #7c3aed; }
 
-  .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+  .dot { width: 5px; height: 5px; border-radius: 50%; background: currentColor; }
 
-  .prop-cell { font-size: 12px; color: #555; line-height: 1.5; }
+  .prop-cell { font-size: 10px; color: #555; line-height: 1.4; }
   .prop-cell.empty { color: #ccc; }
 
-  .address-line { font-size: 10px; color: #aaa; margin-top: 3px; }
+  .address-line { font-size: 9px; color: #aaa; margin-top: 1px; }
 
-  .updated { font-size: 11px; color: #aaa; text-align: center; padding: 12px; }
+  .updated { font-size: 10px; color: #aaa; text-align: center; padding: 8px; }
 </style>
 </head>
 <body>
@@ -269,10 +269,10 @@ const investors = [
 const REGISTERED_ADDRESS = '5901 Balcones Drive, STE 100, Austin TX 78731, USA';
 
 const labels = {
-  done:    { text: "✅ הושלם",  cls: "done" },
-  pending: { text: "⏳ בהמתנה", cls: "pending" },
-  waiting: { text: "—",         cls: "waiting" },
-  forming: { text: "🔄 בתהליך", cls: "forming" }
+  done:    { text: "✅",  cls: "done" },
+  pending: { text: "⏳", cls: "pending" },
+  waiting: { text: "—",  cls: "waiting" },
+  forming: { text: "🔄", cls: "forming" }
 };
 
 function badge(key) {
@@ -302,7 +302,7 @@ function render(f) {
   tbody.innerHTML = filtered.map(inv => `
     <tr data-stage="${inv.stage}">
       <td><div class="investor-name">${inv.name}</div></td>
-      <td><div class="llc-name">${inv.llc}</div><div class="address-line">📍 ${REGISTERED_ADDRESS}</div></td>
+      <td><div class="llc-name">${inv.llc}</div></td>
       <td>${badge(inv.formation)}</td>
       <td>${badge(inv.ss4)}</td>
       <td>${badge(inv.ein)}</td>
@@ -311,7 +311,7 @@ function render(f) {
       <td>${propCell(inv.props[0])}</td>
       <td>${propCell(inv.props[1])}</td>
       <td>${propCell(inv.props[2])}</td>
-      <td style="font-size:12px;color:#888;">${inv.notes}</td>
+      <td style="font-size:10px;color:#888;max-width:120px;">${inv.notes}</td>
     </tr>
   `).join('');
 
