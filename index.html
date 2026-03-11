@@ -95,6 +95,22 @@
 
   .address-line { font-size: 9px; color: #aaa; margin-top: 1px; }
 
+  .registered-address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 20px;
+    background: #f8f9fb;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 11px;
+    color: #64748b;
+    direction: ltr;
+    text-align: center;
+  }
+  .ra-label { font-weight: 600; color: #475569; white-space: nowrap; }
+  .ra-value { font-family: 'Segoe UI', monospace; color: #1a1a2e; letter-spacing: 0.2px; }
+
   .updated { font-size: 10px; color: #aaa; text-align: center; padding: 8px; }
 </style>
 </head>
@@ -110,6 +126,11 @@
   <div class="stat-card done"><div class="num" id="s-ein">0</div><div class="label">EIN התקבל</div></div>
   <div class="stat-card progress"><div class="num" id="s-ss4">0</div><div class="label">ממתין ל-EIN</div></div>
   <div class="stat-card pending"><div class="num" id="s-forming">0</div><div class="label">בהקמה</div></div>
+</div>
+
+<div class="registered-address">
+  <span class="ra-label">📍 Registered Agent Address:</span>
+  <span class="ra-value" id="ra-address"></span>
 </div>
 
 <div class="filters">
@@ -335,6 +356,7 @@ const opts = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' }
 document.getElementById('date-display').textContent = now.toLocaleDateString('he-IL', opts);
 document.getElementById('updated-date').textContent = now.toLocaleDateString('he-IL', opts);
 
+document.getElementById('ra-address').textContent = REGISTERED_ADDRESS;
 render('all');
 </script>
 </body>
