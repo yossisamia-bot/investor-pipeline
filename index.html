@@ -128,14 +128,17 @@
   }
   .detail-panel {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     padding: 10px 16px 12px;
     direction: ltr;
     flex-wrap: wrap;
+    max-width: 700px;
+    margin: 0 auto;
   }
   .detail-field {
     flex: 1;
-    min-width: 180px;
+    min-width: 160px;
+    max-width: 320px;
     background: white;
     border-radius: 8px;
     padding: 8px 12px;
@@ -173,8 +176,7 @@
   .detail-field:hover .copy-hint { opacity: 1; }
   .detail-field.copied .copy-hint { color: #22c55e; opacity: 1; }
 
-  /* EIN number in badge */
-  .ein-num { display: block; font-size: 9px; color: #475569; font-weight: 500; margin-top: 1px; direction: ltr; }
+
 </style>
 </head>
 <body>
@@ -229,20 +231,6 @@
 <script>
 const investors = [
   {
-    name: "עידן והיידי לב ארי",
-    llc: "LVA Holdings LLC",
-    stage: "ss4",
-    formation: "done",
-    ss4: "done",
-    ein: "pending",
-    bank: "waiting",
-    funding: "waiting",
-    props: [null, null, null],
-    notes: "",
-    einNumber: "",
-    addressIL: "1 Renuar St.\nKiryat Ata 2826801\nIsrael"
-  },
-  {
     name: "הרצל פרידמן",
     llc: "Friedman Ventures LLC",
     stage: "ein",
@@ -255,62 +243,6 @@ const investors = [
     notes: "",
     einNumber: "35-2941594",
     addressIL: "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229"
-  },
-  {
-    name: "אופיר מילר",
-    llc: "Miller Holdings LLC",
-    stage: "ein",
-    formation: "done",
-    ss4: "done",
-    ein: "done",
-    bank: "waiting",
-    funding: "waiting",
-    props: [null, null, null],
-    notes: "",
-    einNumber: "61-2327448",
-    addressIL: "69 HaGalil\nGivat Ela\nIsrael 3657000"
-  },
-  {
-    name: "ערן וקלרה עמי",
-    llc: "AmiCore LLC",
-    stage: "ein",
-    formation: "done",
-    ss4: "done",
-    ein: "done",
-    bank: "waiting",
-    funding: "waiting",
-    props: [null, null, null],
-    notes: "",
-    einNumber: "30-1481715",
-    addressIL: "Palmakh St 21\nNess Ziona\nIsrael"
-  },
-  {
-    name: "ויטלי וסבטלנה יורין",
-    llc: "SV Capital Holdings LLC",
-    stage: "ein",
-    formation: "done",
-    ss4: "done",
-    ein: "done",
-    bank: "waiting",
-    funding: "waiting",
-    props: [null, null, null],
-    notes: "",
-    einNumber: "38-4385850",
-    addressIL: "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223"
-  },
-  {
-    name: "טליה ואלון עדן",
-    llc: "TAE Holdings LLC",
-    stage: "ein",
-    formation: "done",
-    ss4: "done",
-    ein: "done",
-    bank: "waiting",
-    funding: "waiting",
-    props: [null, null, null],
-    notes: "",
-    einNumber: "61-2330760",
-    addressIL: "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
   },
   {
     name: "אריאל ודלית נישליס",
@@ -327,6 +259,20 @@ const investors = [
     addressIL: "60 HaEmeq\nGivat Ela\nIsrael 3657000"
   },
   {
+    name: "אופיר מילר",
+    llc: "Miller Holdings LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "",
+    einNumber: "61-2327448",
+    addressIL: "69 HaGalil\nGivat Ela\nIsrael 3657000"
+  },
+  {
     name: "חן פוגלמן ומתן רחמני",
     llc: "G&N Adventure LLC",
     stage: "ein",
@@ -339,6 +285,62 @@ const investors = [
     notes: "",
     einNumber: "30-1480268",
     addressIL: "16 HaKalaniot st\nKiryat Tivon\nIsrael"
+  },
+  {
+    name: "טליה ואלון עדן",
+    llc: "TAE Holdings LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "",
+    einNumber: "61-2330760",
+    addressIL: "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
+  },
+  {
+    name: "ויטלי וסבטלנה יורין",
+    llc: "SV Capital Holdings LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "",
+    einNumber: "38-4385850",
+    addressIL: "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223"
+  },
+  {
+    name: "ערן וקלרה עמי",
+    llc: "AmiCore LLC",
+    stage: "ein",
+    formation: "done",
+    ss4: "done",
+    ein: "done",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "",
+    einNumber: "30-1481715",
+    addressIL: "Palmakh St 21\nNess Ziona\nIsrael"
+  },
+  {
+    name: "עידן והיידי לב ארי",
+    llc: "LVA Holdings LLC",
+    stage: "ss4",
+    formation: "done",
+    ss4: "done",
+    ein: "pending",
+    bank: "waiting",
+    funding: "waiting",
+    props: [null, null, null],
+    notes: "",
+    einNumber: "",
+    addressIL: "1 Renuar St.\nKiryat Ata 2826801\nIsrael"
   },
   {
     name: "אלעד, הדר ומעין טובי",
@@ -379,12 +381,9 @@ const labels = {
   forming: { text: "🔄", cls: "forming" }
 };
 
-function badge(key, einNum) {
+function badge(key) {
   if (!key) return `<span class="badge waiting">—</span>`;
   const l = labels[key];
-  if (einNum && key === 'done') {
-    return `<span class="badge ${l.cls}">${l.text}<span class="ein-num">${einNum}</span></span>`;
-  }
   return `<span class="badge ${l.cls}">${l.text}</span>`;
 }
 
@@ -415,7 +414,7 @@ function render(f) {
       <td><div class="llc-name">${inv.llc}</div></td>
       <td>${badge(inv.formation)}</td>
       <td>${badge(inv.ss4)}</td>
-      <td>${badge(inv.ein, inv.einNumber)}</td>
+      <td>${badge(inv.ein)}</td>
       <td>${badge(inv.bank)}</td>
       <td>${badge(inv.funding)}</td>
       <td>${propCell(inv.props[0])}</td>
