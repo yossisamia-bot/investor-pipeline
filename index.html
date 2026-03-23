@@ -220,6 +220,10 @@ function checkAuth() {
         document.getElementById('auth-input').focus();
     }
 }
+// Auto-unlock via ?k=2002 URL param or session
+if (new URLSearchParams(window.location.search).get('k') === '2002') {
+    sessionStorage.setItem('ipipe_ok','1');
+}
 if (sessionStorage.getItem('ipipe_ok') === '1') {
     document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('auth-screen').style.display = 'none';
