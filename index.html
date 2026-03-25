@@ -545,9 +545,10 @@ function toggleDetail(row) {
 
 function copyField(el, event) {
   event.stopPropagation();
+  const label = el.querySelector('.df-label').textContent.trim();
   const val = el.querySelector('.df-value').textContent.trim();
   if (!val || val === '—' || val === 'ממתין') return;
-  navigator.clipboard.writeText(val).then(() => {
+  navigator.clipboard.writeText('*' + label + '*\n' + val).then(() => {
     el.classList.add('copied');
     el.querySelector('.copy-hint').textContent = '✅ copied!';
     setTimeout(() => {
