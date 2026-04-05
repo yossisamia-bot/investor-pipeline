@@ -1,5 +1,24 @@
 [
   {
+    "name": "עידן והיידי לב ארי",
+    "nameEn": "Idan & Haidee Lev Ari",
+    "llc": "LVA Holdings LLC",
+    "stage": "ein",
+    "formation": "done",
+    "ss4": "done",
+    "ein": "done",
+    "bank": "waiting",
+    "funding": "waiting",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "einNumber": "32-0845575",
+    "addressIL": "1 Renuar St., Kiryat Ata 2826801"
+  },
+  {
     "name": "הרצל פרידמן",
     "nameEn": "Herzel Friedman",
     "llc": "Friedman Ventures LLC",
@@ -7,27 +26,16 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "inprogress",
+    "bank": "waiting",
     "funding": "waiting",
-    "props": [null, null, null],
+    "props": [
+      null,
+      null,
+      null
+    ],
     "notes": "",
     "einNumber": "35-2941594",
-    "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229"
-  },
-  {
-    "name": "אריאל ודלית נישליס",
-    "nameEn": "Ariel & Dalit Nishlis",
-    "llc": "Nishlis Holdings LLC",
-    "stage": "bank",
-    "formation": "done",
-    "ss4": "done",
-    "ein": "done",
-    "bank": "done",
-    "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "חשבון בנק אמריקאי נפתח עצמאית ע״י דלית",
-    "einNumber": "41-3742609",
-    "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000"
+    "addressIL": "32 Kaplan Elisheva st., Haifa 2626229"
   },
   {
     "name": "אופיר מילר",
@@ -39,55 +47,14 @@
     "ein": "done",
     "bank": "waiting",
     "funding": "waiting",
-    "props": [null, null, null],
+    "props": [
+      null,
+      null,
+      null
+    ],
     "notes": "",
     "einNumber": "61-2327448",
-    "addressIL": "69 HaGalil\nGivat Ela\nIsrael 3657000"
-  },
-  {
-    "name": "חן פוגלמן ומתן רחמני",
-    "nameEn": "Chen Fogelman & Matan Rachmani",
-    "llc": "G&N Adventure LLC",
-    "stage": "bank",
-    "formation": "done",
-    "ss4": "done",
-    "ein": "done",
-    "bank": "done",
-    "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "",
-    "einNumber": "30-1480268",
-    "addressIL": "16 HaKalaniot st\nKiryat Tivon\nIsrael"
-  },
-  {
-    "name": "טליה ואלון עדן",
-    "nameEn": "Talya & Alon Eden",
-    "llc": "TAE Holdings LLC",
-    "stage": "ein",
-    "formation": "done",
-    "ss4": "done",
-    "ein": "done",
-    "bank": "inprogress",
-    "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "",
-    "einNumber": "61-2330760",
-    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
-  },
-  {
-    "name": "ויטלי וסבטלנה יורין",
-    "nameEn": "Vitaly & Svetlana Yurin",
-    "llc": "SV Capital Holdings LLC",
-    "stage": "ein",
-    "formation": "done",
-    "ss4": "done",
-    "ein": "done",
-    "bank": "done",
-    "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "",
-    "einNumber": "38-4385850",
-    "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223"
+    "addressIL": "69 HaGalil, Givat Ela 3657000"
   },
   {
     "name": "ערן וקלרה עמי",
@@ -99,25 +66,90 @@
     "ein": "done",
     "bank": "waiting",
     "funding": "waiting",
-    "props": [null, null, null],
+    "props": [
+      null,
+      null,
+      null
+    ],
     "notes": "",
     "einNumber": "30-1481715",
-    "addressIL": "Palmakh St 29\nNess Ziona\nIsrael"
+    "addressIL": "Palmakh St 21, Ness Ziona"
   },
   {
-    "name": "עידן והיידי לב ארי",
-    "nameEn": "Idan & Haidee Lev Ari",
-    "llc": "LVA Holdings LLC",
+    "name": "ויטלי וסבטלנה יורין",
+    "nameEn": "Vitaly & Svetlana Yurin",
+    "llc": "SV Capital Holdings LLC",
     "stage": "ein",
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "inprogress",
+    "bank": "waiting",
     "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "מכתב EIN רשמי התקבל ✅",
-    "einNumber": "32-0845575",
-    "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael"
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "einNumber": "38-4385850",
+    "addressIL": "St Shezarit 8/2, Migdal Haemeq 2305223"
+  },
+  {
+    "name": "טליה ואלון עדן",
+    "nameEn": "Talya & Alon Eden",
+    "llc": "TAE Holdings LLC",
+    "stage": "ein",
+    "formation": "done",
+    "ss4": "done",
+    "ein": "done",
+    "bank": "waiting",
+    "funding": "waiting",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "einNumber": "61-2330760",
+    "addressIL": "Kadesh Barne'a St 3, Apt 18, Tel Aviv 6998603"
+  },
+  {
+    "name": "אריאל ודלית נישליס",
+    "nameEn": "Ariel & Dalit Nishlis",
+    "llc": "Nishlis Holdings LLC",
+    "stage": "ein",
+    "formation": "done",
+    "ss4": "done",
+    "ein": "done",
+    "bank": "waiting",
+    "funding": "waiting",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "einNumber": "41-3742609",
+    "addressIL": "60 HaEmeq, Givat Ela 3657000"
+  },
+  {
+    "name": "חן פוגלמן ומתן רחמני",
+    "nameEn": "Chen Fogelman & Matan Rachmani",
+    "llc": "G&N Adventure LLC",
+    "stage": "bank",
+    "formation": "done",
+    "ss4": "done",
+    "ein": "done",
+    "bank": "done",
+    "funding": "waiting",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
+    "einNumber": "30-1480268",
+    "addressIL": "16 HaKalaniot st, Kiryat Tivon"
   },
   {
     "name": "אלעד, הדר ומעין טובי",
@@ -129,10 +161,14 @@
     "ein": "pending",
     "bank": "waiting",
     "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "שני אנשים בשם הדר טובי",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "SS4 submitted, waiting for EIN",
     "einNumber": "",
-    "addressIL": "Lev HaSharon 43, appt. 4\nTzoran 4285819\nIsrael"
+    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819"
   },
   {
     "name": "מנשה ברודצקי",
@@ -142,12 +178,16 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "inprogress",
     "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "Single Member LLC",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
     "einNumber": "38-4389542",
-    "addressIL": "23 Rimon St.\nShorashim 20164\nIsrael"
+    "addressIL": "23 Rimon St., Shorashim 20164"
   },
   {
     "name": "דויד וסטפני בן שמעון",
@@ -159,9 +199,13 @@
     "ein": "done",
     "bank": "done",
     "funding": "waiting",
-    "props": [null, null, null],
-    "notes": "Multi Member LLC",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "",
     "einNumber": "38-4389535",
-    "addressIL": "34 Hacarmel St.\nGivat Ela 3657000\nIsrael"
+    "addressIL": "34 Hacarmel St., Givat Ela 3657000"
   }
 ]
