@@ -60,18 +60,18 @@
     "name": "ערן וקלרה עמי",
     "nameEn": "Eran & Klara Ami",
     "llc": "AmiCore LLC",
-    "stage": "ein",
+    "stage": "bank",
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "inprogress",
     "funding": "waiting",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "",
+    "notes": "השלים תהליך פתיחת חשבון, ממתין לאישור סופי",
     "einNumber": "30-1481715",
     "addressIL": "Palmakh St 29\nNess Ziona\nIsrael"
   },
@@ -174,7 +174,7 @@
     "name": "מנשה ברודצקי",
     "nameEn": "Menashe Brodecky",
     "llc": "MBK Ventures LLC",
-    "stage": "ein",
+    "stage": "bank",
     "formation": "done",
     "ss4": "done",
     "ein": "done",
@@ -185,7 +185,7 @@
       null,
       null
     ],
-    "notes": "Single Member LLC",
+    "notes": "Single Member LLC - השלים תהליך פתיחת חשבון, ממתין לאישור סופי",
     "einNumber": "38-4389542",
     "addressIL": "23 Rimon St.\nShorashim 20164\nIsrael"
   },
