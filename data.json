@@ -26,7 +26,7 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "inprogress",
+    "bank": "done",
     "funding": "waiting",
     "props": [
       null,
@@ -54,26 +54,26 @@
     ],
     "notes": "",
     "einNumber": "61-2327448",
-    "addressIL": "69 HaGalil\nGivat Ela\nIsrael 3657000"
+    "addressIL": "69 HaGalil, Givat Ela 3657000"
   },
   {
     "name": "ערן וקלרה עמי",
     "nameEn": "Eran & Klara Ami",
     "llc": "AmiCore LLC",
-    "stage": "bank",
+    "stage": "ein",
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "inprogress",
+    "bank": "waiting",
     "funding": "waiting",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "השלים תהליך פתיחת חשבון, ממתין לאישור סופי",
+    "notes": "",
     "einNumber": "30-1481715",
-    "addressIL": "Palmakh St 29\nNess Ziona\nIsrael"
+    "addressIL": "Palmakh St 21, Ness Ziona"
   },
   {
     "name": "ויטלי וסבטלנה יורין",
@@ -149,12 +149,31 @@
     ],
     "notes": "",
     "einNumber": "30-1480268",
-    "addressIL": "16 HaKalaniot st\nKiryat Tivon\nIsrael"
+    "addressIL": "16 HaKalaniot st, Kiryat Tivon"
   },
   {
     "name": "אלעד, הדר ומעין טובי",
     "nameEn": "Elad, Hadar & Maayan Toby",
     "llc": "AVRUMI LLC",
+    "stage": "ss4",
+    "formation": "done",
+    "ss4": "done",
+    "ein": "pending",
+    "bank": "waiting",
+    "funding": "waiting",
+    "props": [
+      null,
+      null,
+      null
+    ],
+    "notes": "SS4 submitted, waiting for EIN",
+    "einNumber": "",
+    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819"
+  },
+  {
+    "name": "מנשה ברודצקי",
+    "nameEn": "Menashe Brodecky",
+    "llc": "MBK Ventures LLC",
     "stage": "ein",
     "formation": "done",
     "ss4": "done",
@@ -166,28 +185,9 @@
       null,
       null
     ],
-    "notes": "מכתב EIN רשמי התקבל 27/3/2026",
-    "einNumber": "36-5172034",
-    "addressIL": "Lev HaSharon 43, appt. 4\nTzoran 4285819\nIsrael"
-  },
-  {
-    "name": "מנשה ברודצקי",
-    "nameEn": "Menashe Brodecky",
-    "llc": "MBK Ventures LLC",
-    "stage": "bank",
-    "formation": "done",
-    "ss4": "done",
-    "ein": "done",
-    "bank": "inprogress",
-    "funding": "waiting",
-    "props": [
-      null,
-      null,
-      null
-    ],
-    "notes": "Single Member LLC - השלים תהליך פתיחת חשבון, ממתין לאישור סופי",
+    "notes": "",
     "einNumber": "38-4389542",
-    "addressIL": "23 Rimon St.\nShorashim 20164\nIsrael"
+    "addressIL": "23 Rimon St., Shorashim 20164"
   },
   {
     "name": "דויד וסטפני בן שמעון",
@@ -204,8 +204,8 @@
       null,
       null
     ],
-    "notes": "Multi Member LLC",
+    "notes": "",
     "einNumber": "38-4389535",
-    "addressIL": "34 Hacarmel St.\nGivat Ela 3657000\nIsrael"
+    "addressIL": "34 Hacarmel St., Givat Ela 3657000"
   }
 ]
