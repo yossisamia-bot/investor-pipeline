@@ -33,7 +33,7 @@
       null,
       null
     ],
-    "notes": "",
+    "notes": "Bank account opened Apr 9 2026",
     "einNumber": "35-2941594",
     "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229"
   },
@@ -64,14 +64,14 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "done",
     "funding": "waiting",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "",
+    "notes": "Bank account officially approved Apr 9 2026",
     "einNumber": "30-1481715",
     "addressIL": "Palmakh St 21, Ness Ziona"
   },
@@ -178,14 +178,14 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "inprogress",
     "funding": "waiting",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "",
+    "notes": "Bank account in process Apr 9 2026",
     "einNumber": "38-4389542",
     "addressIL": "23 Rimon St., Shorashim 20164"
   },
