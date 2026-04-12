@@ -155,10 +155,10 @@
     "name": "אלעד, הדר ומעין טובי",
     "nameEn": "Elad, Hadar & Maayan Toby",
     "llc": "AVRUMI LLC",
-    "stage": "ss4",
+    "stage": "ein",
     "formation": "done",
     "ss4": "done",
-    "ein": "pending",
+    "ein": "done",
     "bank": "waiting",
     "funding": "waiting",
     "props": [
@@ -167,7 +167,7 @@
       null
     ],
     "notes": "SS4 submitted, waiting for EIN",
-    "einNumber": "",
+    "einNumber": "36-5172034",
     "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819"
   },
   {
