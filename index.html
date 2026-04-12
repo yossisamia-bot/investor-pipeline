@@ -342,7 +342,7 @@ function render(f) {
       <td>${propCell(inv.props[0])}</td>
       <td>${propCell(inv.props[1])}</td>
       <td>${propCell(inv.props[2])}</td>
-      <td style="font-size:10px;color:#888;max-width:120px;">${inv.notes}</td>
+      
     </tr>
     <tr class="detail-row">
       <td colspan="11">
@@ -374,7 +374,7 @@ function render(f) {
               if (parts.length === 2) {
                 const name = parts[0];
                 const num = parts[1];
-                return '<div style="margin:2px 0;"><span style="color:#888;font-size:11px;">' + name + ':</span> <a href="tel:' + num.replace(/[^+0-9]/g,'') + '" style="color:#4361ee;text-decoration:none;" onclick="event.stopPropagation();navigator.clipboard.writeText('' + num + '');this.style.color='#2ecc71';setTimeout(()=>this.style.color='#4361ee',800)">' + num + '</a></div>';
+                return '<div style="margin:2px 0;"><span style="color:#888;font-size:11px;">' + name + ':</span> <a href="tel:' + num.replace(/[^+0-9]/g,'') + '" style="color:#4361ee;text-decoration:none;" onclick="event.stopPropagation();navigator.clipboard.writeText('' + name + ': ' + num + '');this.style.color='#2ecc71';setTimeout(()=>this.style.color='#4361ee',800)">' + num + '</a></div>';
               }
               return '<a href="tel:' + p.replace(/[^+0-9]/g,'') + '" style="color:#4361ee;text-decoration:none;">' + p + '</a>';
             }).join('') : '<span class="missing">—</span>'}</div>
@@ -383,6 +383,11 @@ function render(f) {
           <div class="detail-field" onclick="copyField(this, event)">
             <div class="df-label">📧 Email</div>
             <div class="df-value">${inv.email ? inv.email.split(', ').map(e => '<div style="margin:2px 0;"><a href="mailto:' + e + '" style="color:#4361ee;text-decoration:none;font-size:12px;" onclick="event.stopPropagation();navigator.clipboard.writeText('' + e + '');this.style.color='#2ecc71';setTimeout(()=>this.style.color='#4361ee',800)">' + e + '</a></div>').join('') : '<span class="missing">—</span>'}</div>
+            <span class="copy-hint">📋 copy</span>
+          </div>
+          <div class="detail-field" style="grid-column:1/-1;" onclick="copyField(this, event)">
+            <div class="df-label">📝 Notes</div>
+            <div class="df-value" style="font-size:11px;color:#888;">${inv.notes || '—'}</div>
             <span class="copy-hint">📋 copy</span>
           </div>
         </div>
