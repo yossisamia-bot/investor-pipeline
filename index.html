@@ -427,7 +427,7 @@ function copyField(el, event) {
   const label = el.querySelector('.df-label').textContent.trim();
   const val = el.querySelector('.df-value').textContent.trim();
   if (!val || val === '—' || val === 'ממתין') return;
-  navigator.clipboard.writeText('*' + label + '*\n' + val).then(() => {
+  navigator.clipboard.writeText(val).then(() => {
     el.classList.add('copied');
     el.querySelector('.copy-hint').textContent = '✅ copied!';
     setTimeout(() => {
