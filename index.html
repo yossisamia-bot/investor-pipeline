@@ -367,6 +367,16 @@ function render(f) {
             <div class="df-value">${inv.llc}</div>
             <span class="copy-hint">📋 copy</span>
           </div>
+          <div class="detail-field" onclick="copyField(this, event)">
+            <div class="df-label">📱 Phone</div>
+            <div class="df-value">${inv.phone ? `<a href="tel:${inv.phone.replace(/[^+0-9]/g, '')}" style="color:#4361ee;text-decoration:none;">${inv.phone}</a>` : '<span class="missing">—</span>'}</div>
+            <span class="copy-hint">📋 copy</span>
+          </div>
+          <div class="detail-field" onclick="copyField(this, event)">
+            <div class="df-label">📧 Email</div>
+            <div class="df-value">${inv.email ? `<a href="mailto:${inv.email}" style="color:#4361ee;text-decoration:none;">${inv.email}</a>` : '<span class="missing">—</span>'}</div>
+            <span class="copy-hint">📋 copy</span>
+          </div>
         </div>
       </td>
     </tr>`;
