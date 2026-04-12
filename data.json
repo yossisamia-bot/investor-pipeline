@@ -14,11 +14,9 @@
       null,
       null
     ],
-    "notes": "Haidee (wife) - no phone yet. Bank account done Apr 2026",
+    "notes": "מכתב EIN רשמי התקבל ✅",
     "einNumber": "32-0845575",
-    "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael",
-    "phone": "Idan: +972-54-447-5782",
-    "email": ""
+    "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael"
   },
   {
     "name": "הרצל פרידמן",
@@ -35,11 +33,9 @@
       null,
       null
     ],
-    "notes": "Bank account opened Apr 9 2026",
+    "notes": "",
     "einNumber": "35-2941594",
-    "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229",
-    "phone": "Herzel: +972-52-399-5857, Ronit: +972-52-269-9422",
-    "email": "friedman012@gmail.com, fherzel@gmail.com"
+    "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229"
   },
   {
     "name": "אופיר מילר",
@@ -58,9 +54,7 @@
     ],
     "notes": "",
     "einNumber": "61-2327448",
-    "addressIL": "69 HaGalil, Givat Ela 3657000",
-    "phone": "Ofir: +972-52-567-5031, Ofri: +972-50-634-4392",
-    "email": "ofirmillerz1@gmail.com, ofri@priniv.com"
+    "addressIL": "69 HaGalil, Givat Ela 3657000"
   },
   {
     "name": "ערן וקלרה עמי",
@@ -70,18 +64,16 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "done",
     "funding": "waiting",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "Bank account officially approved Apr 9 2026",
+    "notes": "",
     "einNumber": "30-1481715",
-    "addressIL": "Palmakh St 21, Ness Ziona",
-    "phone": "",
-    "email": ""
+    "addressIL": "Palmakh St 21, Ness Ziona"
   },
   {
     "name": "ויטלי וסבטלנה יורין",
@@ -100,9 +92,7 @@
     ],
     "notes": "",
     "einNumber": "38-4385850",
-    "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223",
-    "phone": "Vitaly: +972-50-340-8407",
-    "email": "vitalyyurin@gmail.com"
+    "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223"
   },
   {
     "name": "טליה ואלון עדן",
@@ -121,9 +111,7 @@
     ],
     "notes": "",
     "einNumber": "61-2330760",
-    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603",
-    "phone": "Alon: +972-54-555-6087, Talya: +972-54-686-9674",
-    "email": "talyaa01@gmail.com, alonarden@gmail.com"
+    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
   },
   {
     "name": "אריאל ודלית נישליס",
@@ -142,9 +130,7 @@
     ],
     "notes": "חשבון בנק אמריקאי נפתח עצמאית ע״י דלית",
     "einNumber": "41-3742609",
-    "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000",
-    "phone": "Dalit: +972-50-222-2419",
-    "email": "dalitnishlis@gmail.com"
+    "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000"
   },
   {
     "name": "חן פוגלמן ומתן רחמני",
@@ -163,9 +149,7 @@
     ],
     "notes": "",
     "einNumber": "30-1480268",
-    "addressIL": "16 HaKalaniot st, Kiryat Tivon",
-    "phone": "",
-    "email": "henfogelman@gmail.com"
+    "addressIL": "16 HaKalaniot st, Kiryat Tivon"
   },
   {
     "name": "אלעד, הדר ומעין טובי",
@@ -182,11 +166,9 @@
       null,
       null
     ],
-    "notes": "Ownership: Maayan Toby (sister, passport 31602052) 36% | Hadar Toby (sister, born 1984, passport 31787805) 36% | Hadar Toby-Getta (wife, born 1986, passport 32771241) 14% | Elad Toby (passport 42583858) 14%",
+    "notes": "SS4 submitted, waiting for EIN",
     "einNumber": "",
-    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819",
-    "phone": "Elad: +972-50-852-2005, Hadar Getta (wife): +972-52-865-9340, Hadar (sister): +972-50-684-4743, Maayan: +972-50-684-7714",
-    "email": "elad@remy.co.il, maayan@remy.co.il, hadartoby@gmail.com, hadargetta@gmail.com"
+    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819"
   },
   {
     "name": "מנשה ברודצקי",
@@ -205,9 +187,7 @@
     ],
     "notes": "",
     "einNumber": "38-4389542",
-    "addressIL": "23 Rimon St., Shorashim 20164",
-    "phone": "",
-    "email": "menashebro@gmail.com"
+    "addressIL": "23 Rimon St., Shorashim 20164"
   },
   {
     "name": "דויד וסטפני בן שמעון",
@@ -226,8 +206,6 @@
     ],
     "notes": "",
     "einNumber": "38-4389535",
-    "addressIL": "34 Hacarmel St., Givat Ela 3657000",
-    "phone": "David: +972-54-788-5233, Stephanie: +972-54-207-7692",
-    "email": "DavidBenShimon@gmail.com, StephAgou@gmail.com"
+    "addressIL": "34 Hacarmel St., Givat Ela 3657000"
   }
 ]
