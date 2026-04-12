@@ -17,7 +17,7 @@
     "notes": "Haidee (wife) - no phone yet. Bank account done Apr 2026",
     "einNumber": "32-0845575",
     "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael",
-    "phone": "+972-54-447-5782 (Idan)",
+    "phone": "Idan: +972-54-447-5782",
     "email": ""
   },
   {
@@ -38,7 +38,7 @@
     "notes": "Bank account opened Apr 9 2026",
     "einNumber": "35-2941594",
     "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229",
-    "phone": "+972-52-399-5857 (Herzel), +972-52-269-9422 (Ronit)",
+    "phone": "Herzel: +972-52-399-5857, Ronit: +972-52-269-9422",
     "email": "friedman012@gmail.com, fherzel@gmail.com"
   },
   {
@@ -59,7 +59,7 @@
     "notes": "",
     "einNumber": "61-2327448",
     "addressIL": "69 HaGalil, Givat Ela 3657000",
-    "phone": "+972-52-567-5031 (Ofir), +972-50-634-4392 (Ofri)",
+    "phone": "Ofir: +972-52-567-5031, Ofri: +972-50-634-4392",
     "email": "ofirmillerz1@gmail.com, ofri@priniv.com"
   },
   {
@@ -101,7 +101,7 @@
     "notes": "",
     "einNumber": "38-4385850",
     "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223",
-    "phone": "+972-50-340-8407 (Vitaly)",
+    "phone": "Vitaly: +972-50-340-8407",
     "email": "vitalyyurin@gmail.com"
   },
   {
@@ -122,7 +122,7 @@
     "notes": "",
     "einNumber": "61-2330760",
     "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603",
-    "phone": "+972-54-555-6087 (Alon), +972-54-686-9674 (Talya)",
+    "phone": "Alon: +972-54-555-6087, Talya: +972-54-686-9674",
     "email": "talyaa01@gmail.com, alonarden@gmail.com"
   },
   {
@@ -143,7 +143,7 @@
     "notes": "חשבון בנק אמריקאי נפתח עצמאית ע״י דלית",
     "einNumber": "41-3742609",
     "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000",
-    "phone": "+972-50-222-2419 (Dalit)",
+    "phone": "Dalit: +972-50-222-2419",
     "email": "dalitnishlis@gmail.com"
   },
   {
@@ -185,7 +185,7 @@
     "notes": "Ownership: Maayan Toby (sister, passport 31602052) 36% | Hadar Toby (sister, born 1984, passport 31787805) 36% | Hadar Toby-Getta (wife, born 1986, passport 32771241) 14% | Elad Toby (passport 42583858) 14%",
     "einNumber": "",
     "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819",
-    "phone": "+972-50-852-2005 (Elad), +972-52-865-9340 (Hadar Getta-wife), +972-50-684-4743 (Hadar-sister), +972-50-684-7714 (Maayan)",
+    "phone": "Elad: +972-50-852-2005, Hadar Getta (wife): +972-52-865-9340, Hadar (sister): +972-50-684-4743, Maayan: +972-50-684-7714",
     "email": "elad@remy.co.il, maayan@remy.co.il, hadartoby@gmail.com, hadargetta@gmail.com"
   },
   {
@@ -227,7 +227,7 @@
     "notes": "",
     "einNumber": "38-4389535",
     "addressIL": "34 Hacarmel St., Givat Ela 3657000",
-    "phone": "+972-54-788-5233 (David), +972-54-207-7692 (Stephanie)",
+    "phone": "David: +972-54-788-5233, Stephanie: +972-54-207-7692",
     "email": "DavidBenShimon@gmail.com, StephAgou@gmail.com"
   }
 ]
