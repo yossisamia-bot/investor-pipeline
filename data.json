@@ -207,5 +207,25 @@
     "notes": "",
     "einNumber": "38-4389535",
     "addressIL": "34 Hacarmel St., Givat Ela 3657000"
+  },
+  {
+    "name": "יפית קטוע",
+    "nameEn": "Yafit Katoa",
+    "llc": "",
+    "stage": "formation",
+    "formation": "pending",
+    "ss4": "waiting",
+    "ein": "waiting",
+    "bank": "waiting",
+    "funding": "waiting",
+    "einNumber": "",
+    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
+    "addressIL": "Kibbutz Davrat, 1932500",
+    "phone": "050-887-3883",
+    "props": [
+      null,
+      null,
+      null
+    ]
   }
 ]
