@@ -159,7 +159,7 @@
     "formation": "done",
     "ss4": "done",
     "ein": "done",
-    "bank": "waiting",
+    "bank": "inprogress",
     "funding": "waiting",
     "props": [
       null,
