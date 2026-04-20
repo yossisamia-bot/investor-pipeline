@@ -227,5 +227,24 @@
       null,
       null
     ]
+  },
+  {
+    "name": "נואית לוי",
+    "nameEn": "Noit Levy",
+    "llc": "",
+    "stage": "formation",
+    "formation": "pending",
+    "ss4": "waiting",
+    "ein": "waiting",
+    "bank": "waiting",
+    "funding": "waiting",
+    "einNumber": "",
+    "notes": "In process of LLC formation / account opening.",
+    "addressIL": "",
+    "props": [
+      null,
+      null,
+      null
+    ]
   }
 ]
