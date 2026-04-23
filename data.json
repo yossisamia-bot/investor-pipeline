@@ -111,7 +111,11 @@
     ],
     "notes": "",
     "einNumber": "61-2330760",
-    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
+    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603",
+    "emails": {
+      "Talya Eden": "talyaa01@gmail.com",
+      "Alon Eden": "alonarden@gmail.com"
+    }
   },
   {
     "name": "אריאל ודלית נישליס",
