@@ -111,11 +111,7 @@
     ],
     "notes": "",
     "einNumber": "61-2330760",
-    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603",
-    "emails": {
-      "Talya Eden": "talyaa01@gmail.com",
-      "Alon Eden": "alonarden@gmail.com"
-    }
+    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
   },
   {
     "name": "אריאל ודלית נישליס",
@@ -218,19 +214,18 @@
     "llc": "",
     "stage": "formation",
     "formation": "pending",
-    "ss4": "waiting",
-    "ein": "waiting",
+    "ss4": "pending",
+    "ein": "pending",
     "bank": "waiting",
     "funding": "waiting",
-    "einNumber": "",
-    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
-    "addressIL": "Kibbutz Davrat, 1932500",
-    "phone": "050-887-3883",
     "props": [
       null,
       null,
       null
-    ]
+    ],
+    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
+    "einNumber": "",
+    "addressIL": "Kibbutz Davrat, 1932500"
   },
   {
     "name": "נואית לוי",
@@ -238,17 +233,17 @@
     "llc": "",
     "stage": "formation",
     "formation": "pending",
-    "ss4": "waiting",
-    "ein": "waiting",
+    "ss4": "pending",
+    "ein": "pending",
     "bank": "waiting",
     "funding": "waiting",
-    "einNumber": "",
-    "notes": "In process of LLC formation / account opening.",
-    "addressIL": "",
     "props": [
       null,
       null,
       null
-    ]
+    ],
+    "notes": "In process of LLC formation / account opening.",
+    "einNumber": "",
+    "addressIL": ""
   }
 ]
