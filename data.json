@@ -16,7 +16,26 @@
     ],
     "notes": "מכתב EIN רשמי התקבל ✅",
     "einNumber": "32-0845575",
-    "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael"
+    "addressIL": "1 Renuar St.\nKiryat Ata 2826801\nIsrael",
+    "contacts": [
+      {
+        "name": "Idan Lev Ari",
+        "email": null,
+        "phone": "+972-54-447-5782",
+        "role": "member"
+      },
+      {
+        "name": "Haidee Lev Ari",
+        "email": null,
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "הרצל פרידמן",
@@ -35,7 +54,26 @@
     ],
     "notes": "",
     "einNumber": "35-2941594",
-    "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229"
+    "addressIL": "32 Kaplan Elisheva st.\nHaifa\nIsrael 2626229",
+    "contacts": [
+      {
+        "name": "Herzel Friedman",
+        "email": "fherzel@gmail.com",
+        "phone": null,
+        "role": "member"
+      },
+      {
+        "name": "Ronit Friedman",
+        "email": "friedman012@gmail.com",
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "אופיר מילר",
@@ -54,7 +92,26 @@
     ],
     "notes": "",
     "einNumber": "61-2327448",
-    "addressIL": "69 HaGalil, Givat Ela 3657000"
+    "addressIL": "69 HaGalil, Givat Ela 3657000",
+    "contacts": [
+      {
+        "name": "Ofir Miller",
+        "email": "ofirmillerz1@gmail.com",
+        "phone": null,
+        "role": "member"
+      },
+      {
+        "name": "Ofri Miller",
+        "email": "Ofri@priniv.com",
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "ערן וקלרה עמי",
@@ -73,7 +130,26 @@
     ],
     "notes": "",
     "einNumber": "30-1481715",
-    "addressIL": "Palmakh St 21, Ness Ziona"
+    "addressIL": "Palmakh St 21, Ness Ziona",
+    "contacts": [
+      {
+        "name": "Eran Ami",
+        "email": null,
+        "phone": "+972-54-544-9109",
+        "role": "member"
+      },
+      {
+        "name": "Klara Ami",
+        "email": null,
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "ויטלי וסבטלנה יורין",
@@ -92,7 +168,26 @@
     ],
     "notes": "",
     "einNumber": "38-4385850",
-    "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223"
+    "addressIL": "St Shezarit 8/2\nMigdal Haemeq\nIsrael 2305223",
+    "contacts": [
+      {
+        "name": "Vitaly Yurin",
+        "email": "vitalyyurin@gmail.com",
+        "phone": "+972-50-340-8407",
+        "role": "member"
+      },
+      {
+        "name": "Svetlana Yurin",
+        "email": null,
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "טליה ואלון עדן",
@@ -109,9 +204,49 @@
       null,
       null
     ],
-    "notes": "",
+    "notes": "GO given on Green Mallard 25/04/2026 — awaiting builder offer agreement",
     "einNumber": "61-2330760",
-    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603"
+    "addressIL": "Kadesh Barne'a St 3, Apt 18\nTel Aviv\nIsrael 6998603",
+    "contacts": [
+      {
+        "name": "Talya Eden",
+        "email": "talyaa01@gmail.com",
+        "phone": "+972-54-686-9674",
+        "role": "member"
+      },
+      {
+        "name": "Alon Eden",
+        "email": "alonarden@gmail.com",
+        "phone": "+972-54-555-6087",
+        "role": "member"
+      }
+    ],
+    "deals": [
+      {
+        "id": "eden-2026-04-25-greenmallard",
+        "address": "20135 Green Mallard St, Crosby, TX 77532",
+        "zillow": "https://www.zillow.com/homedetails/20135-Green-Mallard-St-Crosby-TX-77532/461619111_zpid/",
+        "price": 174922,
+        "closingCredit": "2%",
+        "status": "go-given",
+        "goDate": "2026-04-25",
+        "source": "moshe-layani",
+        "notes": "Sent LLC Formation + Passports + buyer emails to Moshe on 25/04/2026"
+      }
+    ],
+    "fundingHistory": [
+      {
+        "date": "2026-04-23",
+        "amount": 20,
+        "currency": "USD",
+        "destination": "Mercury - TAE Holdings LLC",
+        "source": "Talya Eden + Alon Eden (personal)",
+        "notes": "Mercury verification micro-deposit. Confirms LLC bank account is live and reachable."
+      }
+    ],
+    "propertiesOwned": [],
+    "readyToProceedSent": "2026-04-23",
+    "lastContacted": "2026-04-25"
   },
   {
     "name": "אריאל ודלית נישליס",
@@ -130,7 +265,26 @@
     ],
     "notes": "חשבון בנק אמריקאי נפתח עצמאית ע״י דלית",
     "einNumber": "41-3742609",
-    "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000"
+    "addressIL": "60 HaEmeq\nGivat Ela\nIsrael 3657000",
+    "contacts": [
+      {
+        "name": "Dalit Nishlis",
+        "email": "dalitnishlis@gmail.com",
+        "phone": null,
+        "role": "member"
+      },
+      {
+        "name": "Ariel Nishlis",
+        "email": null,
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "חן פוגלמן ומתן רחמני",
@@ -149,7 +303,26 @@
     ],
     "notes": "",
     "einNumber": "30-1480268",
-    "addressIL": "16 HaKalaniot st, Kiryat Tivon"
+    "addressIL": "16 HaKalaniot st, Kiryat Tivon",
+    "contacts": [
+      {
+        "name": "Matan Rachmani",
+        "email": "matan.chen.rachmani@gmail.com",
+        "phone": "+972-54-542-9433",
+        "role": "member"
+      },
+      {
+        "name": "Chen Fogelman",
+        "email": null,
+        "phone": null,
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "אלעד, הדר ומעין טובי",
@@ -166,9 +339,34 @@
       null,
       null
     ],
-    "notes": "",
+    "notes": "Mercury account active. Re-applied 20/04/2026 with members 20%+ only after initial compliance issues. Confirmed active by Yossi 25/04/2026.",
     "einNumber": "36-5172034",
-    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819"
+    "addressIL": "Lev HaSharon 43, appt. 4, Tzoran 4285819",
+    "contacts": [
+      {
+        "name": "Elad Toby",
+        "email": "elad@remy.co.il",
+        "phone": "+972-50-852-2005",
+        "role": "member"
+      },
+      {
+        "name": "Hadar Toby",
+        "email": "hadartoby@gmail.com",
+        "phone": null,
+        "role": "spouse"
+      },
+      {
+        "name": "Maayan Toby",
+        "email": "maayan.toby@gmail.com",
+        "phone": null,
+        "role": "other"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "מנשה ברודצקי",
@@ -187,7 +385,20 @@
     ],
     "notes": "",
     "einNumber": "38-4389542",
-    "addressIL": "23 Rimon St., Shorashim 20164"
+    "addressIL": "23 Rimon St., Shorashim 20164",
+    "contacts": [
+      {
+        "name": "Menashe Brodecky",
+        "email": null,
+        "phone": "+972-52-925-5346",
+        "role": "member"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "דויד וסטפני בן שמעון",
@@ -206,7 +417,26 @@
     ],
     "notes": "",
     "einNumber": "38-4389535",
-    "addressIL": "34 Hacarmel St., Givat Ela 3657000"
+    "addressIL": "34 Hacarmel St., Givat Ela 3657000",
+    "contacts": [
+      {
+        "name": "David Ben Shimon",
+        "email": "Davidbenshimon@gmail.com",
+        "phone": "+972-54-788-5233",
+        "role": "member"
+      },
+      {
+        "name": "Stephanie Ben Shimon",
+        "email": null,
+        "phone": "+972-54-207-7692",
+        "role": "spouse"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "יפית קטוע",
@@ -214,18 +444,31 @@
     "llc": "",
     "stage": "formation",
     "formation": "pending",
-    "ss4": "pending",
-    "ein": "pending",
+    "ss4": "waiting",
+    "ein": "waiting",
     "bank": "waiting",
     "funding": "waiting",
+    "einNumber": "",
+    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
+    "addressIL": "Kibbutz Davrat, 1932500",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
-    "einNumber": "",
-    "addressIL": "Kibbutz Davrat, 1932500"
+    "contacts": [
+      {
+        "name": "Yafit Katoa",
+        "email": null,
+        "phone": "+972-50-887-3883",
+        "role": "member"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": null
   },
   {
     "name": "נואית לוי",
@@ -233,17 +476,30 @@
     "llc": "",
     "stage": "formation",
     "formation": "pending",
-    "ss4": "pending",
-    "ein": "pending",
+    "ss4": "waiting",
+    "ein": "waiting",
     "bank": "waiting",
     "funding": "waiting",
+    "einNumber": "",
+    "notes": "Single-member LLC (foreign owner). LLC name options: NNL Holdings / NNL Capital / NNL Group. Sent to Vered 09/04/2026, Yossi follow-up 23/04 — no formation confirmation yet.",
+    "addressIL": "1 Dalia Street, Givat Ela, 3658500, Israel",
     "props": [
       null,
       null,
       null
     ],
-    "notes": "In process of LLC formation / account opening. כתובת ישראלית: דליה 1, גבעת אלה",
-    "einNumber": "",
-    "addressIL": ""
+    "contacts": [
+      {
+        "name": "Noit Levy",
+        "email": null,
+        "phone": "+972-52-457-8266",
+        "role": "member"
+      }
+    ],
+    "deals": [],
+    "fundingHistory": [],
+    "propertiesOwned": [],
+    "readyToProceedSent": null,
+    "lastContacted": "2026-04-23"
   }
 ]
