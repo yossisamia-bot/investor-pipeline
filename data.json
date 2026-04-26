@@ -473,15 +473,15 @@
   {
     "name": "נואית לוי",
     "nameEn": "Noit Levy",
-    "llc": "",
-    "stage": "formation",
-    "formation": "pending",
+    "llc": "NNL Holdings LLC",
+    "stage": "ss4",
+    "formation": "done",
     "ss4": "waiting",
     "ein": "waiting",
     "bank": "waiting",
     "funding": "waiting",
     "einNumber": "",
-    "notes": "Single-member LLC (foreign owner). LLC name options: NNL Holdings / NNL Capital / NNL Group. Sent to Vered 09/04/2026, Yossi follow-up 23/04 — no formation confirmation yet.",
+    "notes": "Company formed 26/04/2026 by Vered. Docs + SS4 form expected later today. Single-member LLC (foreign owner).",
     "addressIL": "1 Dalia Street, Givat Ela, 3658500, Israel",
     "props": [
       null,
@@ -500,6 +500,6 @@
     "fundingHistory": [],
     "propertiesOwned": [],
     "readyToProceedSent": null,
-    "lastContacted": "2026-04-23"
+    "lastContacted": "2026-04-26"
   }
 ]
