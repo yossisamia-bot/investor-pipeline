@@ -140,7 +140,7 @@
       },
       {
         "name": "Klara Ami",
-        "email": null,
+        "email": "klara.esers@gmail.com",
         "phone": null,
         "role": "spouse"
       }
@@ -149,7 +149,7 @@
     "fundingHistory": [],
     "propertiesOwned": [],
     "readyToProceedSent": null,
-    "lastContacted": null
+    "lastContacted": "2026-04-26"
   },
   {
     "name": "ויטלי וסבטלנה יורין",
@@ -444,18 +444,18 @@
     "llc": "",
     "stage": "formation",
     "formation": "pending",
-    "ss4": "waiting",
-    "ein": "waiting",
+    "ss4": "pending",
+    "ein": "pending",
     "bank": "waiting",
     "funding": "waiting",
-    "einNumber": "",
-    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
-    "addressIL": "Kibbutz Davrat, 1932500",
     "props": [
       null,
       null,
       null
     ],
+    "notes": "LLC name options: YB Finance / YB Capital / YB Investments / YB Capital Group. Single owner. Registered Agent via TaxMK. Email sent to Vered 14/04/2026.",
+    "einNumber": "",
+    "addressIL": "Kibbutz Davrat, 1932500",
     "contacts": [
       {
         "name": "Yafit Katoa",
@@ -476,18 +476,18 @@
     "llc": "NNL Holdings LLC",
     "stage": "ss4",
     "formation": "done",
-    "ss4": "waiting",
-    "ein": "waiting",
+    "ss4": "pending",
+    "ein": "pending",
     "bank": "waiting",
     "funding": "waiting",
-    "einNumber": "",
-    "notes": "Company formed 26/04/2026 by Vered. Docs + SS4 form expected later today. Single-member LLC (foreign owner).",
-    "addressIL": "1 Dalia Street, Givat Ela, 3658500, Israel",
     "props": [
       null,
       null,
       null
     ],
+    "notes": "Company formed 26/04/2026 by Vered. Docs + SS4 form expected later today. Single-member LLC (foreign owner).",
+    "einNumber": "",
+    "addressIL": "1 Dalia Street, Givat Ela, 3658500, Israel",
     "contacts": [
       {
         "name": "Noit Levy",
