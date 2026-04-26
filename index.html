@@ -342,7 +342,7 @@ function _contactEmails(inv) {
 }
 function renderPhones(inv) {
   const list = _contactPhones(inv);
-  if (\!list.length) return '<span class="missing">—</span>';
+  if (!list.length) return '<span class="missing">—</span>';
   return list.map(p => {
     const label = p.name ? `<span style="color:#888;font-size:11px;">${p.name}:</span> ` : '';
     return `<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText('${p.phone}');this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)">${label}<span style="color:#4361ee;">${p.phone}</span></div>`;
@@ -350,7 +350,7 @@ function renderPhones(inv) {
 }
 function renderEmails(inv) {
   const list = _contactEmails(inv);
-  if (\!list.length) return '<span class="missing">—</span>';
+  if (!list.length) return '<span class="missing">—</span>';
   return list.map(e => {
     const label = e.name ? `<span style="color:#888;font-size:11px;">${e.name}:</span> ` : '';
     return `<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText('${e.email}');this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)">${label}<a href="mailto:${e.email}" style="color:#4361ee;text-decoration:none;font-size:12px;" onclick="event.stopPropagation()">${e.email}</a></div>`;
