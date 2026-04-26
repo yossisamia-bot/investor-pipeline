@@ -357,18 +357,14 @@ function renderEmails(inv) {
   }).join('');
 }
 function fundingBadge(inv) {
-  const isReadyToBuy = inv.bank === 'done' && inv.funding === 'done';
+  // Show only "Ready to buy" (when actionable) and "R2P sent" indicator.
+  // Other states are already visible in left-side column badges (bank/funding/etc).
+  const owners = (inv.contacts || []).filter(c => c.role === 'member' || c.role === 'spouse');
+  const allHaveEmail = owners.length > 0 && owners.every(c => c.email);
+  const isReadyToBuy = inv.bank === 'done' && inv.funding === 'done' && allHaveEmail;
   const r2pSent = inv.readyToProceedSent ? `<span style="display:inline-block;padding:1px 6px;border-radius:8px;background:#6366f1;color:#fff;font-size:9px;margin-right:3px;" title="Ready-to-Proceed sent ${inv.readyToProceedSent}">✉️ R2P sent</span>` : '';
-  if (isReadyToBuy) {
-    return `${r2pSent}<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#10b981;color:#fff;font-size:10px;margin-right:4px;" title="Bank done + funding done = ready to buy a property">🟢 Ready to buy</span>`;
-  }
-  if (inv.bank === 'done') {
-    return `${r2pSent}<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#f59e0b;color:#fff;font-size:10px;margin-right:4px;" title="Bank done, awaiting wire">🟡 Awaiting wire</span>`;
-  }
-  if (inv.bank === 'inprogress') {
-    return `<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#fb923c;color:#fff;font-size:10px;margin-right:4px;" title="Bank application in progress">🟠 Bank in progress</span>`;
-  }
-  return `<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#94a3b8;color:#fff;font-size:10px;margin-right:4px;" title="No bank yet">⚪ No bank</span>`;
+  const ready = isReadyToBuy ? `<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#10b981;color:#fff;font-size:10px;margin-right:4px;" title="Bank+funding done, all owners have email — ready to send Ready-to-Proceed">🟢 Ready to buy</span>` : '';
+  return r2pSent + ready;
 }
 
 let currentFilter = 'all';
