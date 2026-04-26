@@ -317,6 +317,60 @@ function propCell(p) {
   </div>`;
 }
 
+
+// Hadash v2 contact helpers
+function _contactPhones(inv) {
+  if (Array.isArray(inv.contacts)) {
+    return inv.contacts.filter(c => c.phone).map(c => ({ name: c.name, phone: c.phone }));
+  }
+  if (inv.phone) {
+    return inv.phone.split(', ').map(p => {
+      const m = p.split(': ');
+      return m.length === 2 ? { name: m[0], phone: m[1] } : { name: '', phone: p };
+    });
+  }
+  return [];
+}
+function _contactEmails(inv) {
+  if (Array.isArray(inv.contacts)) {
+    return inv.contacts.filter(c => c.email).map(c => ({ name: c.name, email: c.email }));
+  }
+  if (inv.email) {
+    return inv.email.split(', ').map(e => ({ name: '', email: e }));
+  }
+  return [];
+}
+function renderPhones(inv) {
+  const list = _contactPhones(inv);
+  if (\!list.length) return '<span class="missing">—</span>';
+  return list.map(p => {
+    const label = p.name ? `<span style="color:#888;font-size:11px;">${p.name}:</span> ` : '';
+    return `<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText('${p.phone}');this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)">${label}<span style="color:#4361ee;">${p.phone}</span></div>`;
+  }).join('');
+}
+function renderEmails(inv) {
+  const list = _contactEmails(inv);
+  if (\!list.length) return '<span class="missing">—</span>';
+  return list.map(e => {
+    const label = e.name ? `<span style="color:#888;font-size:11px;">${e.name}:</span> ` : '';
+    return `<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText('${e.email}');this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)">${label}<a href="mailto:${e.email}" style="color:#4361ee;text-decoration:none;font-size:12px;" onclick="event.stopPropagation()">${e.email}</a></div>`;
+  }).join('');
+}
+function fundingBadge(inv) {
+  const isReadyToBuy = inv.bank === 'done' && inv.funding === 'done';
+  const r2pSent = inv.readyToProceedSent ? `<span style="display:inline-block;padding:1px 6px;border-radius:8px;background:#6366f1;color:#fff;font-size:9px;margin-right:3px;" title="Ready-to-Proceed sent ${inv.readyToProceedSent}">✉️ R2P sent</span>` : '';
+  if (isReadyToBuy) {
+    return `${r2pSent}<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#10b981;color:#fff;font-size:10px;margin-right:4px;" title="Bank done + funding done = ready to buy a property">🟢 Ready to buy</span>`;
+  }
+  if (inv.bank === 'done') {
+    return `${r2pSent}<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#f59e0b;color:#fff;font-size:10px;margin-right:4px;" title="Bank done, awaiting wire">🟡 Awaiting wire</span>`;
+  }
+  if (inv.bank === 'inprogress') {
+    return `<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#fb923c;color:#fff;font-size:10px;margin-right:4px;" title="Bank application in progress">🟠 Bank in progress</span>`;
+  }
+  return `<span style="display:inline-block;padding:2px 8px;border-radius:10px;background:#94a3b8;color:#fff;font-size:10px;margin-right:4px;" title="No bank yet">⚪ No bank</span>`;
+}
+
 let currentFilter = 'all';
 
 function render(f) {
@@ -332,7 +386,7 @@ function render(f) {
     const einClass = inv.einNumber ? '' : 'missing';
     return `
     <tr class="inv-row" data-stage="${inv.stage}" onclick="toggleDetail(this)">
-      <td><div class="investor-name">${inv.name}</div></td>
+      <td><div class="investor-name">${inv.name}${fundingBadge(inv)}</div></td>
       <td><div class="llc-name">${inv.llc}</div></td>
       <td>${badge(inv.formation)}</td>
       <td>${badge(inv.ss4)}</td>
@@ -369,18 +423,12 @@ function render(f) {
           </div>
           <div class="detail-field" onclick="copyField(this, event)">
             <div class="df-label">📱 Phone</div>
-            <div class="df-value">${inv.phone ? inv.phone.split(', ').map(p => {
-              const parts = p.split(': ');
-              if (parts.length === 2) {
-                return '<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText(this.dataset.copy);this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)" data-copy="' + parts[0] + ': ' + parts[1] + '"><span style="color:#888;font-size:11px;">' + parts[0] + ':</span> <span style="color:#4361ee;">' + parts[1] + '</span></div>';
-              }
-              return '<div style="color:#4361ee;">' + p + '</div>';
-            }).join('') : '<span class="missing">—</span>'}</div>
+            <div class="df-value">${renderPhones(inv)}</div>
             <span class="copy-hint">📋 click to copy</span>
           </div>
           <div class="detail-field" onclick="copyField(this, event)">
             <div class="df-label">📧 Email</div>
-            <div class="df-value">${inv.email ? inv.email.split(', ').map(e => '<div style="margin:2px 0;cursor:pointer;" onclick="event.stopPropagation();navigator.clipboard.writeText(this.textContent.trim());this.style.opacity=0.5;setTimeout(()=>this.style.opacity=1,600)"><a href="mailto:' + e + '" style="color:#4361ee;text-decoration:none;font-size:12px;" onclick="event.stopPropagation()">' + e + '</a></div>').join('') : '<span class="missing">—</span>'}</div>
+            <div class="df-value">${renderEmails(inv)}</div>
             <span class="copy-hint">📋 copy</span>
           </div>
           <div class="detail-field" style="grid-column:1/-1;" onclick="copyField(this, event)">
