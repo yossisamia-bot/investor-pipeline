@@ -491,7 +491,7 @@
     "contacts": [
       {
         "name": "Noit Levy",
-        "email": null,
+        "email": "Noinoyle@gmail.com",
         "phone": "+972-52-457-8266",
         "role": "member"
       }
@@ -500,6 +500,6 @@
     "fundingHistory": [],
     "propertiesOwned": [],
     "readyToProceedSent": null,
-    "lastContacted": "2026-04-26"
+    "lastContacted": "2026-04-27"
   }
 ]
